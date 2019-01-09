@@ -1,0 +1,317 @@
+body{
+	font-family: Georgia;
+	margin: 0;
+}
+
+.wrapper{
+	width: 100%;
+	max-width: 1180px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.logo{
+	font-family: 'Dancing Script', cursive;
+	float: left;
+}
+
+header nav{
+	float: right;
+}
+
+header nav li{
+	float: left;
+	list-style-type: none;
+	margin: 10px 20px;
+}
+
+header nav li a{
+	text-decoration: none;
+	color: #333;
+	font-size: 18px;
+}
+
+#main-banner img{
+	width: 100%;
+}
+
+h2{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+#content-one{
+	padding-bottom: 40px;
+	line-height: 2em;
+}
+
+#content-two ul{
+	padding: 0;
+	list-style-type: none;
+}
+
+#content-two li{
+	float: left;
+	width: 42%;
+	padding: 0;
+	margin: 20px 0 20px 8%;
+}
+
+/*Moving odd lis to the left*/
+
+#content-two li:nth-child(odd){
+	margin: 20px 8% 20px 0;
+}
+
+#content-two ul:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.yoga-type{
+	float: left;
+	color: #555;
+	font-weight: bold;
+}
+
+.description{
+	clear: both;
+	display: block;
+	line-height: 1.75em;
+}
+
+#featured{
+	margin: 100px;
+}
+
+#featured ul{
+	padding: 0;	
+}
+
+.img-box img{
+	width: auto;
+	height: 200px;
+}
+
+#featured li{
+	float: left;
+	width: 30%;
+	margin: 1%;
+	list-style-type: none;
+
+}
+
+#featured  li img{
+	width: 100%;
+	margin-bottom: 10px;  
+}
+
+#featured  li a{
+	text-decoration: none;
+	color: #333;
+}
+#featured ul:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+footer{
+	margin-top: 100px;
+	background-color: #3b3b3b;
+	padding: 30px 0;
+}
+
+footer:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+footer ul{
+	float: left;
+	list-style-type: none;
+	padding: 0;
+	width: 23%;
+	margin-right: 2%;
+	color: #eee;
+}
+
+footer li{
+	margin: 10px 0;
+}
+
+.logo-footer{
+	font-family: 'Dancing Script', cursive;
+}
+
+footer a{
+	color: #eee;
+	text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets */
+
+
+
+@media screen and (min-width: 768px){
+
+	header nav{
+		float: none;
+		clear: left;
+		width: 100%;
+	}
+
+	header nav ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	.logo{
+		margin: 10px auto;
+		float: none;
+		text-align: center;
+
+	}
+
+	header nav ul li{
+		margin: 10px 0;
+		width: 20%;
+		padding: 0;
+		text-align: center;
+	}
+
+	#content-one{
+		width: 75%;
+		padding:60px;
+		margin: 20px auto;
+		
+	}
+
+	.yoga-type{
+		display: block;
+	}
+	
+	h2{
+		padding-top: 10px
+	}
+
+	.img-box img{
+		height: 150px;
+	}
+
+	#featured li{
+		width: 40%;
+		margin: 5%;
+	}
+
+	#content-two li{
+		float: none;
+		width: 94%;
+		margin: 30px 4% !important;
+	}
+	.description {
+		clear: both; 
+		display: block;
+		line-height: 1.75em;
+	}
+	footer ul{
+		width: 48%;
+		text-align: center;
+	}
+	
+
+}
+
+/* Mobiles */
+@media screen and (max-width: 768px){
+
+	.burger-nav{
+		display: block;
+		width: 100%;
+		height: 40px;
+		background: url(images/icon1.jpg) no-repeat 98% center;
+		cursor: pointer;
+
+	}
+
+	header .wrapper{
+		width: 100%;
+		padding: 0;
+	}
+
+	header nav ul{
+		overflow: hidden;
+		background-color: #505050;
+		height: 0;
+	}
+
+	.open{
+		height: auto;
+	}
+
+	header nav ul li{
+		float: none;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+	}
+
+	header nav ul li a{
+		color: #fff;
+		padding: 10px;
+		border-bottom: 1px solid #404040;
+		display: block;
+		margin: 0;
+		font-size: 15px;
+	}
+
+	#content-one{
+		width: 75%;	
+		margin: 20px auto;
+		
+	}
+
+	#featured li{
+		width: 96%;
+		margin:20px 5%;
+	}
+
+	.img-box img{
+		height: 150px;
+	}
+
+	footer ul{
+		width: 96%;
+		text-align: center;
+	}
+
+	.yoga-type{
+		display: block;
+	}
+
+
+	#content-two li{
+		float: none;
+		width: 94%;
+		margin: 30px 4% !important;
+	}
+
+	.description {
+		clear: both; 
+		display: block;
+		line-height: 1.75em;
+	}
+
+	#main-banner img{
+		position: relative;
+		width: 170%;
+		right: 7%;
+
+	}
+
+}
